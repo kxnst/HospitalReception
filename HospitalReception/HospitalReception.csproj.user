@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Views\AppointmentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DoctorSearchPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DoctorsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PatientSearchPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PatientsHistoryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PatientsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\AppointmentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DoctorSearchPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DoctorsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PatientSearchPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PatientsHistoryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PatientsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

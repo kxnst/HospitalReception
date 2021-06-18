@@ -1,0 +1,31 @@
+﻿<NavigationWindow x:Class="HospitalReception.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalReception"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <NavigationWindow.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Width="200" Content="Управління лікарями" HorizontalAlignment="Center" Height="40" Click="NavigateDoctors"/>
+            <Button Grid.Column="0" Grid.Row="1" Width="200" Content="Управління хворими"  HorizontalAlignment="Center" Height="40" Click="NavigatePatients"/>
+            <Button Grid.Column="0" Grid.Row="2" Width="200" Content="Пошук пацієнтів"     HorizontalAlignment="Center" Height="40" Click="NavigatePatientsSearch"/>
+            <Button Grid.Column="0" Grid.Row="3" Width="200" Content="Пошук лікарів"       HorizontalAlignment="Center" Height="40" Click="NavigateDoctorsSearch"/>
+            <Button Grid.Column="0" Grid.Row="4" Width="200" Content="Запис до лікаря"     HorizontalAlignment="Center" Height="40" Click="NavigateNewAppointment"/>
+            <Button Grid.Column="0" Grid.Row="5" Width="200" Content="Розклад лікаря"      HorizontalAlignment="Center" Height="40" Click="NavigateSchedule"/>
+            <Button Grid.Column="0" Grid.Row="5" Width="200" Content="Історія пацієнта"    HorizontalAlignment="Center" Height="40" Click="NavigateHistory"/>
+        </Grid>
+    </NavigationWindow.Content>
+</NavigationWindow>

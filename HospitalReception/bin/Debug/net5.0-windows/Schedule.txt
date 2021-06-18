@@ -1,0 +1,1 @@
+[{"date":"2021-06-18T09:20:00","DoctorId":1,"PatientId":1,"Reason":"еуеуеуе","Date":"2021-06-18T09:20:00","id":1},{"date":"2021-06-18T10:20:00","DoctorId":1,"PatientId":1,"Reason":"еуыеыеые ","Date":"2021-06-18T10:20:00","id":2},{"date":"2021-06-18T11:00:00","DoctorId":1,"PatientId":1,"Reason":"dgfhjhjgfd","Date":"2021-06-18T11:00:00","id":3}]
