@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace HospitalReception.ViewModels
 {
-    class Appointment : AbstractViewModel<Schedule>
+    class Appointment : AbstractViewModel<Models.Instances.Schedule>
     {
         public Appointment()
         {
@@ -14,7 +14,7 @@ namespace HospitalReception.ViewModels
             DoctorsContainer = DbModel.Instance.Doctors.Select();
             PatientsContainer = DbModel.Instance.Patients.Select();
             timeRenderer = new AllowedTimeRenderer();
-            Selected = new Schedule();
+            Selected = new Models.Instances.Schedule();
             selectedDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
         }
         private ObservableCollection<Doctor> doctorsContainer;

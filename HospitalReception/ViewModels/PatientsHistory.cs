@@ -13,17 +13,7 @@ namespace HospitalReception.ViewModels
     {
         private ObservableCollection<Patient> patientsContainer;
         private Patient selectedPatient;
-        private ObservableCollection<Schedule> tmpSchedule;
-        public ObservableCollection<Schedule> TmpSchedule
-        {
-            get => tmpSchedule;
-            set
-            {
-                tmpSchedule = value;
-                OnPropertyChanged("TmpSchedule");
-            }
-        }
-
+        
         public ObservableCollection<Patient> PatientsContainer
         {
             get => patientsContainer;
@@ -50,7 +40,7 @@ namespace HospitalReception.ViewModels
         }
         private void updateSchedule()
         {
-            TmpSchedule = new ObservableCollection<Schedule>(
+            TmpContainer = new ObservableCollection<Schedule>(
                 from t in Container
                 where t.PatientId == SelectedPatient.id
                 orderby t.Date descending

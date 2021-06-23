@@ -54,7 +54,7 @@ namespace HospitalReception.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/HospitalReception;V1.0.0.0;component/views/patientspage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/HospitalReception;component/views/patientspage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\PatientsPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

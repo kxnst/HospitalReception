@@ -17,7 +17,7 @@
         <StackPanel Width="300px">
             <TextBlock Margin="10"  HorizontalAlignment="Center">Оберіть хворого</TextBlock>
             <ComboBox ItemsSource="{Binding PatientsContainer}" SelectedItem="{Binding SelectedPatient}" DisplayMemberPath="Fio"/>
-            <ListBox ItemsSource="{Binding Path=TmpSchedule, Mode=TwoWay}" Height="250" Margin="0 20 0 0">
+            <ListBox ItemsSource="{Binding Path=TmpContainer, Mode=TwoWay}" Height="250" Margin="0 20 0 0">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="5">

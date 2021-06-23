@@ -27,7 +27,10 @@ namespace HospitalReception.Models
         {
             path = Directory.GetCurrentDirectory() + "\\" + path_ + ".txt";
             if (!File.Exists(path))
-                File.Create(path);
+            {
+                var stream = File.Create(path);
+                stream.Close();
+            }
             using (FileStream fstream = new FileStream(path, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite))
             {
                 byte[] array = new byte[fstream.Length];
@@ -48,7 +51,7 @@ namespace HospitalReception.Models
             } 
 
         }
-        protected void updateDb() 
+        public void updateDb() 
         {
 
             using (FileStream stream = new FileStream(path, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite))

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HospitalReception.Models
 {
-    class DbModel
+    public class DbModel
     {
         public DbTable<Patient> Patients { get; private set; }
         public DbTable<Schedule> Schedule { get; private set; }
@@ -29,7 +29,7 @@ namespace HospitalReception.Models
             this.Doctors = new DoctorsTable();
             this.Appointment = Schedule;
         }
-        public DbModel()
+        private DbModel()
         {
             init();
         }

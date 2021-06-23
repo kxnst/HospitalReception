@@ -49,9 +49,9 @@ namespace HospitalReception.Models.Instances
                 return false;
             if (doctor.fio == null || doctor.specialization == null || doctor.experience <= 0)
                 return false;
-            bool validFio = Regex.IsMatch(doctor.Fio, "[А-ЯA-Zа-яa-z\\s]+");
+            bool validFio = Regex.IsMatch(doctor.Fio, "[\\p{L}\\s]+");
             bool validExperience = doctor.Experience > 0;
-            bool validSpecialization = Regex.IsMatch(doctor.Specialization, "[а-яА-Я]{2,}");
+            bool validSpecialization = Regex.IsMatch(doctor.Specialization, "[\\p{L}\\s]{2,}");
             return validFio && validExperience && validSpecialization;
         }
     }

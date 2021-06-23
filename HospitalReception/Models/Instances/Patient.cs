@@ -45,9 +45,9 @@ namespace HospitalReception.Models.Instances
                 return false;
             if (patient.Fio == null || patient.Disease == null || patient.Age <= 0)
                 return false;
-            bool validFio = Regex.IsMatch(patient.Fio, "[А-ЯA-Zа-яa-z\\s]+");
+            bool validFio = Regex.IsMatch(patient.Fio, "[\\p{L}\\s]+");
             bool validAge = patient.Age > 0;
-            bool validDisease = Regex.IsMatch(patient.Disease, "[а-яА-Я]{2,}");
+            bool validDisease = Regex.IsMatch(patient.Disease, "[\\p{L}\\s]{2,}");
             return validFio && validAge && validDisease;
         }
     }
